@@ -40,14 +40,53 @@ html,body{
     background-color: black;
     padding: 20vh 8vw;
 }
+
+#counter{
+    display: flex;
+    align-items: center;
+    width: 6vw;
+    margin-left: 3vw;
+    margin-right: 1vw;
+}
+#counter h3{
+    font-size: 4vw;
+    font-family: silkSerifLight;
+    font-weight: 100;
+}
+.load h4{
+    font-size: 4vw;
+    font-family: silkSerifLight;
+    font-weight: 100;
+    margin-right: 4vw;
+}
 .load{
     margin-bottom: 1px;
-    height: 15vh;
+    height: 14vh;
     overflow: hidden;
+    display: flex ;
+    align-items: center;
 }
 .load h1{
-    font-size: 7.3vw;
+    font-size: 7vw;
     text-transform: uppercase;
+}
+
+#now{
+    font-family: silkSerifLight;
+    margin-left: 3vw;
+    -webkit-text-stroke-width:1px;
+    -webkit-text-stroke-color: #fff;
+    color: transparent;
+    font-weight: 100;
+    font-size: 7vw;
+    animation: anim1 4s linear .9s infinite forwards;
+    transition: all ease;
+}
+
+#wait{
+    margin-top: 8vh;
+    padding-left: 21vw;
+    font-size: 1.3vw;
 }
 
 #page1{
@@ -62,4 +101,28 @@ html,body{
     width: 100%;
     background-color: #151515;
     position: relative;
+}
+
+
+
+@keyframes anim1 {
+    0%{
+        opacity: 1;
+    }
+    20%{
+        opacity: 0;
+    }
+    40%{
+        opacity: 1;
+    }
+    60%{
+        opacity: 0;
+    }
+    80%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+    
 }
