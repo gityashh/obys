@@ -33,12 +33,20 @@ setTimeout(function(){
     clearInterval(int);
 },40000)
 
-
-// gsap.to("#loader",{
-//     y:-1000,
-//     duration:.5,
-//     delay:4,
-//     ease:"power4.Out"
-// })
-
 var tl = gsap.timeline();
+
+tl.to("#wait",{
+    opacity:0,
+    duration:.2,
+    delay:5
+})
+tl.to(".load",{
+    opacity:0,
+    duration:.2,
+    stagger:-.2
+})
+tl.to("#loader",{
+    y:"-100%",
+    duration:1.5,
+    ease:"power4.inOut"
+})

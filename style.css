@@ -45,16 +45,16 @@ html,body{
     display: flex;
     align-items: center;
     width: 6vw;
-    margin-left: 3vw;
+    margin-left: 4.5vw;
     margin-right: 1vw;
 }
 #counter h3{
-    font-size: 4vw;
+    font-size: 3.5vw;
     font-family: silkSerifLight;
     font-weight: 100;
 }
 .load h4{
-    font-size: 4vw;
+    font-size: 3.5vw;
     font-family: silkSerifLight;
     font-weight: 100;
     margin-right: 4vw;
@@ -72,15 +72,13 @@ html,body{
 }
 
 #now{
-    font-family: silkSerifLight;
     margin-left: 3vw;
-    -webkit-text-stroke-width:1px;
-    -webkit-text-stroke-color: #fff;
-    color: transparent;
+    font-family: plain-light;
+    -webkit-text-stroke:1px transparent;
+    color: white;
     font-weight: 100;
     font-size: 7vw;
-    animation: anim1 4s linear .9s infinite forwards;
-    transition: all ease;
+    animation: anim1 1.5s linear .9s infinite;
 }
 
 #wait{
@@ -107,22 +105,52 @@ html,body{
 
 @keyframes anim1 {
     0%{
-        opacity: 1;
+        font-family: plain-light;
+        color: #fff;
+        font-weight: 100;
+        -webkit-text-stroke:1px transparent;
     }
-    20%{
+    45%{
+        font-family: plain-light;
+        color: #fff;
+        font-weight: 100;
+        -webkit-text-stroke:1px transparent;
         opacity: 0;
     }
-    40%{
-        opacity: 1;
-    }
-    60%{
+    46%{
+        font-family: silkSerifLight;
+        -webkit-text-stroke:1px #fff;
+        color: transparent;
+        font-weight: 100;
         opacity: 0;
     }
-    80%{
+    50%{
+        font-family: silkSerifLight;
+        -webkit-text-stroke:1px #fff;
+        color: transparent;
+        font-weight: 100;
         opacity: 1;
+    }
+    95%{
+        font-family: silkSerifLight;
+        -webkit-text-stroke:1px #fff;
+        color: transparent;
+        font-weight: 100;
+        opacity: 0;
+    }
+    96%{
+        font-family: plain-light;
+        color: #fff;
+        font-weight: 100;
+        -webkit-text-stroke:1px transparent;
+        opacity: 0;
     }
     100%{
-        opacity: 0;
+        font-family: plain-light;
+        color: #fff;
+        font-weight: 100;
+        -webkit-text-stroke:1px transparent;
+        opacity: 1; 
     }
     
 }
