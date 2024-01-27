@@ -30,6 +30,7 @@ html,body{
 
 #main{
     width: 100%;
+    background-color: #151515;
 }
 
 #loader{
@@ -39,6 +40,7 @@ html,body{
     z-index: 99;
     background-color: black;
     padding: 20vh 8vw;
+    display: none;
 }
 
 #counter{
@@ -88,18 +90,13 @@ html,body{
 }
 
 #page1{
-    height: 100vh;
+    height: 90vh;
     width: 100%;
     background-color: #151515;
     position: relative;
 }
 
-#page2{
-    height: 100vh;
-    width: 100%;
-    background-color: #151515;
-    position: relative;
-}
+
 
 
 
@@ -153,4 +150,92 @@ html,body{
         opacity: 1; 
     }
     
+}
+
+#nav{
+    height: 14vh;
+    width: 100vw;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 3vw 5vw;
+}
+#leftNav{
+    display: flex;
+    gap: 19vw;
+}
+#leftNav h6{
+    font-size: 0.9vw;
+    font-weight: 500;
+}
+#rightNav{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 2.4vw;
+}
+#rightNav h5{
+    font-size: 0.95vw;
+    font-weight: 500;
+}
+#title{
+    padding-left: 28vw;
+    padding-top: 10vw;
+}
+#title h1{
+    font-size: 7vw;
+    line-height: 7vw;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+#page2{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    padding-top: 2vw;
+    padding-bottom: 14vw;
+    padding-left: 28vw;
+}
+#video-container{
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    position: relative;
+}
+#video-container img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#video-container video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    opacity: 0;
+}
+
+.mousefollower{
+    height: 40px;
+    width: 40px;
+    background-color: transparent !important;
+    mix-blend-mode: normal;
+    border: .8px solid #fff;
+    transform: scale(1) translate(-35%,-35%)  !important;
+}
+#play-btn{
+    height: 10vw;
+    position: absolute;
+    width: 10vw;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: orange;
+    left: 70%;
+    top: -15%;
+    z-index: 9;
+}
+#play-btn i{
+    font-size: 2.5vw;
 }
