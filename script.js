@@ -109,7 +109,6 @@ function page2Animations() {
 page2Animations()
 
 function sheryAnimations() {   
-    Shery.mouseFollower()
-    Shery.makeMagnet("#rightNav h5")
+   
 }
 sheryAnimations()
