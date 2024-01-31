@@ -239,3 +239,273 @@ html,body{
 #play-btn i{
     font-size: 2.5vw;
 }
+
+#page3{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+}
+#page3title{
+    width: 100vw;
+    padding-left: 28vw;
+    padding-right: 0vw;
+    overflow: hidden;
+    margin-bottom: 20vh;
+}
+#page3title h1{
+    font-size: 7vw;
+    font-weight: 600;
+    margin-bottom: 9vh;
+    position: relative;
+}
+#line{
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+    transform-origin: 0%;
+}
+#page3title h1::before{
+    content: "02";
+    position: absolute;
+    top: "0%";
+    left: "0%";
+    font-size: 3vw;
+    font-family: silkSerifLight;
+    font-weight: 300;
+    font-style: italic;
+    transform: translate(-250%,20%);
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.card .uppercard{
+    height: 6vh;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 2vw;
+}
+.uppercard h2{
+    font-size: 2.4vw;
+    width: max-content;
+}
+.card .image-container{
+    height: 85%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.image-container img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+#lowercard{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.1vw;
+    font-weight: 300;
+}
+.card #lineCard{
+    height: 1px;
+    width: 100%;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+#card1{
+    height: 39.04vw;
+    width: 22.5vw;
+}
+#card2{
+    width: 32vw;
+    height: 50vw;
+}
+#columns{
+    padding-left: 4vw;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 40px;
+}
+#column1{
+    width: 22.5vw;
+}
+#column2{
+    width: 32vw;
+}
+#column3{
+    width: 32vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#circle{
+    height: 22vw;
+    width: 22vw;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px #fff solid;
+    margin-left: 7vw;
+    margin-top: 40vh;
+    position: relative;
+}
+#circle svg{
+    height: 120px;
+}
+#circle .circle-in{
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    color: #000;
+    position: absolute;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    scale: 0;
+    transition: all ease 0.5s;
+}
+.circle-in p{
+    color: #000;
+    font-weight: 600;
+    font-size: 15px;
+    transition: all ease 0.5s;
+    scale: 0;
+    transition-delay: 0.5s;
+}
+#circle:hover .circle-in{
+    scale: 1;
+}
+#circle:hover .circle-in p{
+    scale: 1;
+}
+#circle2{
+    height: 22vw;
+    width: 22vw;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px #fff solid;
+    margin-top: 25vh;
+    position: relative;
+}
+#circle2 svg{
+    height: 120px;
+    rotate: -45deg;
+}
+#circle2 .circle-in{
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    color: #000;
+    position: absolute;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    scale: 0;
+    transition: all ease 0.5s;
+    z-index: 10;
+}
+.circle-in p{
+    color: #000;
+    font-weight: 600;
+    font-size: 15px;
+    transition: all ease 0.5s;
+    scale: 0;
+    transition-delay: 0.5s;
+}
+#circle2:hover .circle-in{
+    scale: 1;
+}
+#circle2:hover .circle-in p{
+    scale: 1;
+}
+
+#circle3{
+    height: 22vw;
+    width: 22vw;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px #fff solid;
+    margin-top: 60vh;
+    position: relative;
+    margin-left: 17vh;
+}
+#circle3 svg{
+    height: 120px;
+    rotate: -90deg;
+}
+#circle3 .circle-in{
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    color: #000;
+    position: absolute;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    scale: 0;
+    transition: all ease 0.5s;
+    z-index: 10;
+}
+.circle-in p{
+    color: #000;
+    font-weight: 600;
+    font-size: 15px;
+    transition: all ease 0.5s;
+    scale: 0;
+    transition-delay: 0.5s;
+}
+#circle3:hover .circle-in{
+    scale: 1;
+}
+#circle3:hover .circle-in p{
+    scale: 1;
+}
+#card3{
+    width: 32vw;
+    height: 58vw;
+    margin-top: 20vh;
+}
+#card4{
+    width: 32vw;
+    height: 50vw;
+    margin-top: 8vh;
+}
+#card5{
+    height: 39.04vw;
+    width: 22.5vw;
+    margin-top: 60vh;
+}
+#card6{
+    width: 32vw;
+    height: 55vw;
+    margin-top: 45vh;
+}
+
+#page4{
+    min-height: 100vh;
+    width: 100%;
+}
+
+._canvas_container{
+    z-index: 99999 !important;
+}
