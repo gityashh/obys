@@ -502,10 +502,33 @@ html,body{
 }
 
 #page4{
-    min-height: 100vh;
+    height: 70vh;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 ._canvas_container{
     z-index: 99999 !important;
+}
+
+#allProjects{
+    height: 23vw;
+    width: 23vw;
+    border-radius: 50%;
+    background-color: orange;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all ease 0.4s;
+}
+#allProjects h5{
+    font-size: 1.1vw;
+    font-family: silkSerifLight;
+    font-weight: 300;
+    font-style: italic;
+}
+#allProjects:hover{
+    scale: 0.9;
 }
