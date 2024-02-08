@@ -36,6 +36,10 @@ function loaderAnimations() {
     
     var tl = gsap.timeline();
     
+    setTimeout(() => {
+        document.body.style.overflow = "visible"
+    }, 7000);
+
     tl.to("#wait",{
         opacity:0,
         duration:.2,
@@ -112,7 +116,7 @@ function sheryAnimations() {
     Shery.mouseFollower()
     Shery.makeMagnet("#rightNav h5")
     Shery.imageEffect(".image-container",{
-        debug:true,
+        // debug:true,
         gooey:true,
         config:{"a":{"value":0,"range":[0,30]},"b":{"value":-0.98,"range":[-1,1]},"zindex":{"value":-9996999,"range":[-9999999,9999999]},"aspect":{"value":0.7729320425572702},"ignoreShapeAspect":{"value":true},"shapePosition":{"value":{"x":0,"y":0}},"shapeScale":{"value":{"x":0.5,"y":0.5}},"shapeEdgeSoftness":{"value":0,"range":[0,0.5]},"shapeRadius":{"value":0,"range":[0,2]},"currentScroll":{"value":2},"scrollLerp":{"value":0.07},"gooey":{"value":true},"infiniteGooey":{"value":true},"growSize":{"value":4,"range":[1,15]},"durationOut":{"value":1,"range":[0.1,5]},"durationIn":{"value":1.5,"range":[0.1,5]},"displaceAmount":{"value":0.5},"masker":{"value":true},"maskVal":{"value":1.21,"range":[1,5]},"scrollType":{"value":2},"geoVertex":{"range":[1,64],"value":1},"noEffectGooey":{"value":true},"onMouse":{"value":1},"noise_speed":{"value":0.92,"range":[0,10]},"metaball":{"value":0.37,"range":[0,2]},"discard_threshold":{"value":0.48,"range":[0,1]},"antialias_threshold":{"value":0,"range":[0,0.1]},"noise_height":{"value":0.5,"range":[0,2]},"noise_scale":{"value":6.11,"range":[0,100]}}
     })
@@ -186,3 +190,31 @@ function page3Animations() {
     })
 }
 page3Animations()
+
+function page6animations() {
+    gsap.to(".page6mark",{
+        x:"-60%",
+        duration:10,
+        scrollTrigger:{
+            scroller:"body",
+            trigger:"#page6",
+            start:"top 130%",
+            end:"top -130%",
+            markers:true,
+            scrub:1
+        }
+    })
+    gsap.to(".page6mark2",{
+        x:"-60%",
+        duration:10,
+        scrollTrigger:{
+            scroller:"body",
+            trigger:"#page6",
+            start:"top 130%",
+            end:"top -130%",
+            markers:true,
+            scrub:1
+        }
+    })
+}
+page6animations()
